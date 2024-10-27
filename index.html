@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Sigmar&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_weather/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_weather/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_weather/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_weather/site.webmanifest" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Weather App</h1>
+      <div class="main-wrapper">
+        <div class="searchEL">
+          <input type="text" class="inputEL" placeholder="City" />
+          <button class="search">SEARCH</button>
+        </div>
+        <div class="info-wrapper hidden">
+          <div class="weather-info">
+            <h1 class="city font">Chicago, Illinois</h1>
+            <div class="imgDiv">
+              <img class="img-weather" src="images/clear.png" />
+            </div>
+            <h1 class="condition font">CLOUDY</h1>
+            <h1 class="temp">TEMP: 77°F</h1>
+          </div>
+          <div class="extra-info">
+            <p class="feel-like">Feels like: 10°F</p>
+            <p class="wind">Wind: 60 mph</p>
+          </div>
+        </div>
+      </div>
+      <img class="imgBg" src="images/clouds.png" />
+    </div>
+    <footer>
+      <p>Copyright © Jason G</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

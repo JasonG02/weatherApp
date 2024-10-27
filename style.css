@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(#5417d6, #000000);
+}
+.main-wrapper {
+  width: 470px;
+  height: auto;
+  background: linear-gradient(#6bc1ff, #653fbe);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px,
+    rgba(217, 217, 217, 0.3) 0px 8px 16px -8px;
+}
+.info-wrapper.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.searchEL {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 5px;
+}
+.hidden {
+  display: none;
+}
+.info-wrapper {
+  margin-top: 30px;
+}
+
+.inputEL {
+  width: 75%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-size: 18px;
+}
+button {
+  padding: 13px 22px;
+  border: none;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #5417d6;
+  color: white;
+}
+.title {
+  color: white;
+  margin-top: 35px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(4, 4, 4),
+    0 0 0.2em rgb(0, 0, 0);
+}
+.extra-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0px 50px 0px;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(4, 4, 4),
+    0 0 0.2em rgb(0, 0, 0);
+}
+.weather-info {
+  text-align: center;
+}
+.temp {
+  color: white;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(4, 4, 4),
+    0 0 0.2em rgb(0, 0, 0);
+  margin-top: 25px;
+}
+.font {
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(4, 4, 4),
+    0 0 0.2em rgb(0, 0, 0);
+}
+img {
+  margin: -20px;
+  width: auto;
+  height: 220px;
+}
+.imgDiv {
+  margin: 12px;
+}
+footer {
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+@media (max-width: 500px) {
+  .main-wrapper {
+    width: 90%;
+  }
+  .inputEL {
+    width: 70%;
+    font-size: 18px;
+  }
+  body {
+    margin-bottom: 50px;
+  }
+  button {
+    padding: 13px 15px;
+  }
+}
