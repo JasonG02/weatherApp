@@ -59,7 +59,7 @@ const showData = (info) => {
   conditionEL.textContent = `${info.condition.text}`;
   tempEl.textContent = `TEMP: ${info.temp_f}°F`;
   feelLike.textContent = `Feels like: ${info.feelslike_f}°F`;
-  windEl.textContent = `Wind: ${info.wind_mph}mph`;
+  windEl.textContent = `Wind: ${info.wind_mph} mph`;
 
   let infoPic = info.condition.text.toLowerCase();
 
