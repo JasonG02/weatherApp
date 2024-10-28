@@ -57,9 +57,9 @@ btnSearch.onclick = () => {
 const showData = (info) => {
   cityEl.textContent = `${info.name}, ${info.region}`;
   conditionEL.textContent = `${info.condition.text}`;
-  tempEl.textContent = `TEMP: ${info.temp_f}°F`;
-  feelLike.textContent = `Feels like: ${info.feelslike_f}°F`;
-  windEl.textContent = `Wind: ${info.wind_mph} mph`;
+  tempEl.textContent = `TEMP: ${Math.round(info.temp_f)}°F`;
+  feelLike.textContent = `Feels like: ${Math.round(info.feelslike_f)}°F`;
+  windEl.textContent = `Wind: ${Math.round(info.wind_mph)} mph`;
 
   let infoPic = info.condition.text.toLowerCase();
 
